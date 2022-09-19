@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title> Registration Form</title>
+
+<script src="204179N_2.js"></script>
+
+<style>
+
+  table{
+  border:none;
+  padding:50px;
+  border-radius:10px;
+  background-color: #87cefa;
+  font-family: "Open Sans", sans-serif;
+  
+  }
+ input[type= submit]
+{
+  background-color:#04AA6D;
+  border:none;
+  border-radius:10px;
+  color: white;
+  padding:16px 32px;
+  cursor:pointer;
+}
+
+  body{
+  background-image:url('image1.jpg');
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-size:cover;
+
+
+}  
+
+</style>
+</head>
+<body onload="document.registration.userid.focus();">
+<h1 align=center >Registration Form</h1>
+
+<form name='registration' onSubmit="return form_Validation();">
+
+
+<table border ="0px" align=CENTER >
+
+<tr>
+   <td align=right><label for="userid">*User id:</label></td>
+   <td><input type="text" name="userid" size="12" required /></td>
+<tr></tr><tr></tr>
+<tr>
+   <td align=right><label for="passid">*Password:</label></td>
+   <td><input type="password" name="passid" size="12" required /></td> 
+<tr></tr><tr></tr>
+<tr>
+   <td align=right><label for="username">*Name:</label></td>
+   <td><input type="text" name="username" size="50" required /></td>
+<tr></tr><tr></tr>
+<tr>
+   <td align=right><label for="address">Address:</label></td>
+   <td><input type="text" name="address" size="50" /></td>
+<tr></tr><tr></tr>
+<tr>
+   <td align=right><label for="country">*Country:</label></td>
+   <td><select name="country">
+      <option selected="" value="Default" selected>(Please select a country)</option>
+      <option value="AS" >Australia</option>
+      <option value="CA" >Canada</option>
+      <option value="IN" >India</option>
+      <option value="RS" >Russia</option>
+      <option value="SL" >Sri Lanka</option>
+      </select></td>
+<tr></tr><tr></tr>
+<tr>
+   <td align=right><label for="zip">ZIP Code:</label></td>
+   <td><input type="text" name="zip" /></td>
+<tr></tr><tr></tr>
+<tr>
+   <td align=right><label for="email">*Email:</label></td>
+   <td><input type="text" name="email" size="50" required /></td>
+<tr></tr><tr></tr>
+<tr>
+   <td align=right><label for="gender">*Sex:</label></td>
+   <td><input type="radio" name="sex"  value="Male" id="msex" /><span>Male</span>
+       <input type="radio" name="sex" value="Female" id="fsex" /><span>Female</span></td>
+<tr></tr><tr></tr>
+<tr></tr><tr></tr>
+<tr>
+   <td align=right><label>*Language:</label></td>
+   <td><input type="checkbox" name="lan" value="en" id="en" checked /><span>English</span>
+       <input type="checkbox" name="lan" value="noen" id="noen" /><span>Non English</span></td>
+<tr>
+   <td align=right><label for="desc">About:</label></td>
+   <td><textarea name="desc" id="desc" cols="50"rows="10"></textarea></td>
+<tr></tr>
+<tr>
+   <td></td><td><label>* Required</label></td></tr>
+<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+<tr><td></td>
+<td>
+  <input type="submit" name="submit" value="Submit" /></td>
+
+</table>
+</form>
+</body>
+</html>
+
+

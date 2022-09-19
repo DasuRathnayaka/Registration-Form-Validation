@@ -1,0 +1,36 @@
+<!Doctype html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+<script>
+function appendText() {
+x=document.getElementById('text');
+y=document.getElementById('tex');
+x.innerHTML=x.innerHTML+y.value;
+}
+
+function deleteText() {
+
+x=document.getElementById('text');
+x.innerHTML="";
+}
+
+</script>
+<title>
+Question 3
+</title>
+
+</head>
+<body>
+<p id="text">
+Hi Nimal How are you?
+</p>
+
+<input type="button" value="Append Text" onclick="appendText()" />
+<br />
+<input type="button" value="Delete Text" onclick="deleteText()" />
+<br />
+<input type="text" name id="tex" value="New text" size="25" maxlength="25" />
+
+</body>
+</html>
